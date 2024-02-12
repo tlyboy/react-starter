@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@8.14.3",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -22,6 +23,7 @@
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.56.0",
     "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.7",
     "vite": "^5.1.0"
   }
 }
