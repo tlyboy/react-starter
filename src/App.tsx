@@ -3,8 +3,8 @@ function App() {
 
   return (
     <>
-      <div className="h-full flex flex-col items-center justify-center">
-        <button className="btn" onClick={() => setCount(count + 1)}>
+      <div h-full flex="~ col" items-center justify-center>
+        <button btn onClick={() => setCount(count + 1)}>
           +
           {' '}
           {count}

@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.14.3",
+  "packageManager": "pnpm@8.15.1",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -12,22 +12,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@unocss/reset": "^0.57.7",
+    "@unocss/reset": "^0.58.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.3",
-    "@iconify-json/carbon": "^1.1.28",
+    "@antfu/eslint-config": "^2.6.4",
+    "@iconify-json/carbon": "^1.1.29",
     "@types/node": "^20.11.17",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "@unocss/eslint-plugin": "^0.57.7",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@unocss/eslint-plugin": "^0.58.5",
+    "@unocss/transformer-attributify-jsx": "^0.58.5",
+    "@vitejs/plugin-react-swc": "^3.6.0",
     "eslint": "^8.56.0",
-    "typescript": "^5.2.2",
-    "unocss": "^0.57.7",
-    "unplugin-auto-import": "^0.16.7",
-    "vite": "^5.1.0"
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.5",
+    "unplugin-auto-import": "^0.17.5",
+    "vite": "^5.1.1"
   }
 }
