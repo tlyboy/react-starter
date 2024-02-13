@@ -7,9 +7,11 @@ export {}
 declare global {
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
+  const isDark: typeof import('./src/utils/dark')['isDark']
   const lazy: typeof import('react')['lazy']
   const memo: typeof import('react')['memo']
   const startTransition: typeof import('react')['startTransition']
+  const toggleDark: typeof import('./src/utils/dark')['toggleDark']
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
   const useDebugValue: typeof import('react')['useDebugValue']
