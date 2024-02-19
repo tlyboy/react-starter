@@ -1,7 +1,14 @@
 import antfu from '@antfu/eslint-config'
-import unocss from '@unocss/eslint-plugin'
 
 export default antfu(
-  {},
-  unocss.configs.flat,
+  {
+    react: true,
+    unocss: true,
+    formatters: true,
+  },
+  {
+    rules: {
+      'react/no-unknown-property': 'off',
+    },
+  },
 )
