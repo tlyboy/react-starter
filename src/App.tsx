@@ -7,9 +7,7 @@ function App() {
         text="center gray-700 dark:gray-200"
       >
         <div>
-          <p>
-            🚀 React starter
-          </p>
+          <p>🚀 React starter</p>
         </div>
         <nav mt-6 flex justify-center gap-2 text-xl>
           <button icon-btn title="切换深色模式" onClick={toggleDark}>
