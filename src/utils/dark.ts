@@ -4,21 +4,25 @@ export const isDark = {
   },
   set value(v) {
     const modeVal = v ? 'dark' : 'light'
-    const modeSystemValue = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    const modeSystemValue =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
 
     document.documentElement.classList.toggle('dark')
 
     if (modeSystemValue === modeVal)
       localStorage.setItem('color-schema', 'auto')
-    else
-      localStorage.setItem('color-schema', modeVal)
+    else localStorage.setItem('color-schema', modeVal)
   },
 }
 
 export function toggleDark(event: React.MouseEvent<HTMLElement>) {
-  // @ts-expect-error experimental API
-  const isAppearanceTransition = document.startViewTransition
-    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const isAppearanceTransition =
+    // @ts-expect-error experimental API
+    document.startViewTransition &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
     isDark.value = !isDark.value
@@ -35,25 +39,22 @@ export function toggleDark(event: React.MouseEvent<HTMLElement>) {
   const transition = document.startViewTransition(async () => {
     isDark.value = !isDark.value
   })
-  transition.ready
-    .then(() => {
-      const clipPath = [
-        `circle(0px at ${x}px ${y}px)`,
-        `circle(${endRadius}px at ${x}px ${y}px)`,
-      ]
-      document.documentElement.animate(
-        {
-          clipPath: isDark.value
-            ? [...clipPath].reverse()
-            : clipPath,
-        },
-        {
-          duration: 400,
-          easing: 'ease-out',
-          pseudoElement: isDark.value
-            ? '::view-transition-old(root)'
-            : '::view-transition-new(root)',
-        },
-      )
-    })
+  transition.ready.then(() => {
+    const clipPath = [
+      `circle(0px at ${x}px ${y}px)`,
+      `circle(${endRadius}px at ${x}px ${y}px)`,
+    ]
+    document.documentElement.animate(
+      {
+        clipPath: isDark.value ? [...clipPath].reverse() : clipPath,
+      },
+      {
+        duration: 400,
+        easing: 'ease-out',
+        pseudoElement: isDark.value
+          ? '::view-transition-old(root)'
+          : '::view-transition-new(root)',
+      },
+    )
+  })
 }

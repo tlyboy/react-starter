@@ -1,10 +1,8 @@
-import '@unocss/reset/tailwind.css'
-import 'uno.css'
-import './assets/styles/main.css'
-import nProgress from 'nprogress'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import App from './App.tsx'
+import './assets/styles/main.css'
+import nProgress from 'nprogress'
 
 nProgress.start()
 nProgress.done()
