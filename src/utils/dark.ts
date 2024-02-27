@@ -4,17 +4,19 @@ export const isDark = {
   },
   set value(v) {
     const modeVal = v ? 'dark' : 'light'
-    const modeSystemValue =
+    const systemValue =
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light'
 
-    document.documentElement.classList.toggle('dark')
+    document.documentElement.classList.toggle('dark', v)
 
-    if (modeSystemValue === modeVal)
+    if (systemValue === modeVal) {
       localStorage.setItem('color-schema', 'auto')
-    else localStorage.setItem('color-schema', modeVal)
+    } else {
+      localStorage.setItem('color-schema', modeVal)
+    }
   },
 }
 
@@ -36,7 +38,7 @@ export function toggleDark(event: React.MouseEvent<HTMLElement>) {
     Math.max(y, innerHeight - y),
   )
 
-  const transition = document.startViewTransition(async () => {
+  const transition = document.startViewTransition(() => {
     isDark.value = !isDark.value
   })
   transition.ready.then(() => {
