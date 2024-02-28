@@ -6,6 +6,7 @@
 export {}
 declare global {
   const Link: typeof import('react-router-dom')['Link']
+  const NavBar: typeof import('./src/components/NavBar')['default']
   const NavLink: typeof import('react-router-dom')['NavLink']
   const Navigate: typeof import('react-router-dom')['Navigate']
   const Outlet: typeof import('react-router-dom')['Outlet']
