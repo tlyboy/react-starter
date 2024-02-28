@@ -1,15 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App.tsx'
-import nProgress from 'nprogress'
 
 import './assets/styles/main.css'
 
-nProgress.start()
-nProgress.done()
+const app = createRoot(document.getElementById('root')!)
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+app.render(
+  <StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </StrictMode>,
 )

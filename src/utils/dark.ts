@@ -39,7 +39,7 @@ export function toggleDark(event: React.MouseEvent) {
     Math.max(x, innerWidth - x),
     Math.max(y, innerHeight - y),
   )
-  // @ts-expect-error experimental API
+
   const transition = document.startViewTransition(() => {
     isDark.value = !isDark.value
   })
