@@ -1,4 +1,4 @@
-import { MouseEvent } from 'react'
+import React from 'react'
 
 export const isDark = {
   get value() {
@@ -22,7 +22,7 @@ export const isDark = {
   },
 }
 
-export function toggleDark(event: MouseEvent) {
+export function toggleDark(event: React.MouseEvent) {
   const isAppearanceTransition =
     // @ts-expect-error experimental API
     document.startViewTransition &&
@@ -39,7 +39,7 @@ export function toggleDark(event: MouseEvent) {
     Math.max(x, innerWidth - x),
     Math.max(y, innerHeight - y),
   )
-
+  // @ts-expect-error experimental API
   const transition = document.startViewTransition(() => {
     isDark.value = !isDark.value
   })
