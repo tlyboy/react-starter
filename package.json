@@ -20,9 +20,9 @@
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
     "@iconify-json/carbon": "^1.1.30",
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.11.21",
     "@types/nprogress": "^0.2.3",
-    "@types/react": "^18.2.59",
+    "@types/react": "^18.2.60",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
