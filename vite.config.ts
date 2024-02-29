@@ -12,7 +12,7 @@ export default defineConfig({
     AutoImport({
       imports: ['react', 'react-router-dom'],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['./src/components', './src/hooks', './src/utils'],
+      dirs: ['./src/utils', './src/hooks', './src/components'],
     }),
   ],
   resolve: {
