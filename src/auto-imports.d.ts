@@ -6,7 +6,7 @@
 export {}
 declare global {
   const Link: typeof import('react-router-dom')['Link']
-  const NavBar: typeof import('./src/components/NavBar')['default']
+  const NavBar: typeof import('./components/NavBar')['default']
   const NavLink: typeof import('react-router-dom')['NavLink']
   const Navigate: typeof import('react-router-dom')['Navigate']
   const Outlet: typeof import('react-router-dom')['Outlet']
@@ -14,11 +14,11 @@ declare global {
   const Routes: typeof import('react-router-dom')['Routes']
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
-  const isDark: typeof import('./src/utils/dark')['isDark']
+  const isDark: typeof import('./utils/dark')['isDark']
   const lazy: typeof import('react')['lazy']
   const memo: typeof import('react')['memo']
   const startTransition: typeof import('react')['startTransition']
-  const toggleDark: typeof import('./src/utils/dark')['toggleDark']
+  const toggleDark: typeof import('./utils/dark')['toggleDark']
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
   const useDebugValue: typeof import('react')['useDebugValue']

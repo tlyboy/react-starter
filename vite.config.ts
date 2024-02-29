@@ -11,6 +11,7 @@ export default defineConfig({
     Pages(),
     AutoImport({
       imports: ['react', 'react-router-dom'],
+      dts: 'src/auto-imports.d.ts',
       dirs: ['./src/components', './src/hooks', './src/utils'],
     }),
   ],
