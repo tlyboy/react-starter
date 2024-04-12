@@ -7,7 +7,7 @@ function NavBar({ className }: { className?: string }) {
         className="icon-btn i-carbon-sun dark:i-carbon-moon"
         title="切换深色模式"
         onClick={toggleDark}
-      />
+      ></button>
 
       <a
         className="icon-btn i-carbon-logo-github"
@@ -15,7 +15,7 @@ function NavBar({ className }: { className?: string }) {
         target="_blank"
         rel="noopener noreferrer"
         title="GitHub"
-      />
+      ></a>
     </nav>
   )
 }

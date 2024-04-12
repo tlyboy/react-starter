@@ -4,7 +4,7 @@ function All() {
   return (
     <main className="px-4 py-10 text-center text-[#3498db] dark:text-gray-200">
       <div className="text-4xl">
-        <div className="i-carbon-warning inline-block" />
+        <div className="i-carbon-warning inline-block"></div>
       </div>
       <div>未找到页面</div>
       <div>
