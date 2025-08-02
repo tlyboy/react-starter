@@ -1,0 +1,6 @@
+services:
+  react-starter:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '80:80'
