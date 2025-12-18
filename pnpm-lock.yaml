@@ -11,9 +11,6 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.17
         version: 4.1.17(rolldown-vite@7.2.5(@types/node@24.10.1)(jiti@2.6.1))
-      immer:
-        specifier: ^10.2.0
-        version: 10.2.0
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -23,9 +20,6 @@ importers:
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
-      use-immer:
-        specifier: ^0.11.0
-        version: 0.11.0(immer@10.2.0)(react@19.2.0)
     devDependencies:
       '@egoist/tailwindcss-icons':
         specifier: ^1.9.0
@@ -496,9 +490,6 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  immer@10.2.0:
-    resolution: {integrity: sha512-d/+XTN3zfODyjr89gM3mPq1WNX2B8pYsu7eORitdwyA2sBubnTl3laYlBk4sXY5FUa5qTZGBDPJICVbvqzjlbw==}
-
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
@@ -802,12 +793,6 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
-
-  use-immer@0.11.0:
-    resolution: {integrity: sha512-RNAqi3GqsWJ4bcCd4LMBgdzvPmTABam24DUaFiKfX9s3MSorNRz9RDZYJkllJoMHUxVLMDetwAuCDeyWNrp1yA==}
-    peerDependencies:
-      immer: '>=8.0.0'
-      react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -1227,8 +1212,6 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  immer@10.2.0: {}
-
   jiti@2.6.1: {}
 
   js-tokens@4.0.0: {}
@@ -1423,10 +1406,5 @@ snapshots:
       browserslist: 4.28.0
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  use-immer@0.11.0(immer@10.2.0)(react@19.2.0):
-    dependencies:
-      immer: 10.2.0
-      react: 19.2.0
 
   yallist@3.1.1: {}
